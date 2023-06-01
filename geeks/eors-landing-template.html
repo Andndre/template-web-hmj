@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="HMJ TI" />
+
+    <script>
+      // Render blocking JS:
+      if (localStorage.theme)
+        document.documentElement.setAttribute("data-theme", localStorage.theme);
+    </script>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/hmj-ti.png"
+      type="image/png"
+    />
+
+    <!-- Libs CSS -->
+    <link
+      href="assets/libs/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>E-ORS - Electronic Open Recruitment System HMJ TI</title>
+    <meta
+      name="description"
+      content="Electronic Open Recruitment System adalah sebuah sistem pendaftaran berbasis website yang digunakan untuk pendaftaran kepanitiaan ataupun keanggotaan di lingkungan HMJ Jurusan Teknik Informatika."
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/logo/hmj-ti.png"
+              width="50"
+              height="50"
+              alt="logo hmj ti"
+          /></a>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <section class="py-lg-9 py-7">
+        <div class="container">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div
+              data-aos="zoom-out-right"
+              class="col-xxl-5 col-xl-6 col-lg-6 col-12"
+            >
+              <div>
+                <h1 class="display-2 fw-bold mb-3">
+                  Selamat datang di
+                  <u class="text-warning"
+                    ><span class="text-primary"
+                      >Electronic Open Recruitment System</span
+                    ></u
+                  >
+                  HMJ TI Undiksha
+                </h1>
+                <p class="lead mb-4">
+                  Electronic Open Recruitment System adalah sebuah sistem
+                  pendaftaran berbasis website yang digunakan untuk pendaftaran
+                  kepanitiaan ataupun keanggotaan di lingkungan HMJ Teknik
+                  Informatika.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-out-left"
+              class="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-12"
+            >
+              <img
+                width="1480px"
+                height="2033px"
+                class="img-fluid"
+                src="assets/images/ti-bot/rev1.png"
+                alt="ti bot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tujuan E-ORS -->
+      <section class="py-6 bg-white">
+        <div class="container mt-6">
+          <div class="row">
+            <div class="offset-xl-2 col-xl-8 col-12">
+              <div data-aos="fade-up" class="col-lg-9 col-md-12 col-12 mb-8">
+                <h2 class="mb-3 display-4 fw-bold">Tujuan E-ORS</h2>
+                <p class="lead text-muted">
+                  Ada beberapa tujuan pembuatan Electronic Open Recruitment
+                  System HMJ TI, diantaranya
+                </p>
+              </div>
+              <div>
+                <div class="row">
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-clock-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Mudah Digunakan</h2>
+                    <p class="fs-5">
+                      Mempermudah dalam melakukan kegiatan Open Recruitment
+                      kepanitiaan atapun keanggotaan HMJ TI Undiksha
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-book-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Ramah Kertas</h2>
+                    <p class="fs-5">
+                      Mengurangi penggunaan kertas sekali pakai yang biasanya
+                      digunakan dalam setiap berkas yang dikumpul pada kegiatan
+                      Open Recruitment secara konvensional
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-calendar2-check-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Proses Mudah</h2>
+                    <p class="fs-5">
+                      Mempermudah dalam melakukan pendataan, melakukan
+                      wawancara, penilaian wawancara, hingga memberikan
+                      keputusan akhir penerimaan peserta
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container py-4 border-top-lg">
+        <div class="row">
+          <span class="col"
+            >© Copyrights
+            <span id="copyright">
+              <script>
+                document
+                  .getElementById("copyright")
+                  .appendChild(
+                    document.createTextNode(new Date().getFullYear())
+                  );
+              </script> </span
+            >HMJ TI Undiksha. All rights reserved</span
+          >
+          <span class="col text-end">Made with love by WEB DEV HMJ TI</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+  <!-- Mirrored from geeksui.codescandy.com/geeks/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 May 2023 01:55:21 GMT -->
+</html>
