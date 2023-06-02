@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="HMJ TI" />
+
+    <script>
+      // Render blocking JS:
+      if (localStorage.theme)
+        document.documentElement.setAttribute("data-theme", localStorage.theme);
+    </script>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo-hmj.svg"
+      type="image/svg"
+    />
+
+    <!-- Libs CSS -->
+    <link
+      href="assets/libs/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/libs/@mdi/font/css/materialdesignicons.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+
+    <!-- AOS : Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>E-ORS - Electronic Open Recruitment System HMJ TI</title>
+    <meta
+      name="description"
+      content="Electronic Open Recruitment System adalah sebuah sistem pendaftaran berbasis website yang digunakan untuk pendaftaran kepanitiaan ataupun keanggotaan di lingkungan HMJ Jurusan Teknik Informatika."
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/images/logo/logo-hmj.svg"
+              width="50"
+              height="50"
+              alt="logo hmj ti"
+          /></a>
+          <div class="d-flex align-items-center">
+            <div>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-default3"
+                aria-controls="navbar-default3"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="icon-bar top-bar mt-0"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <section class="py-lg-9 py-7">
+        <div class="container">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div
+              data-aos="zoom-out-right"
+              class="col-xxl-5 col-xl-6 col-lg-6 col-12"
+            >
+              <div>
+                <h1 class="display-2 fw-bold mb-3">
+                  Selamat datang di
+                  <u class="text-warning"
+                    ><span class="text-primary"
+                      >Electronic Open Recruitment System</span
+                    ></u
+                  >
+                  HMJ TI Undiksha
+                </h1>
+                <p class="lead mb-4">
+                  Electronic Open Recruitment System adalah sebuah sistem
+                  pendaftaran berbasis website yang digunakan untuk pendaftaran
+                  kepanitiaan ataupun keanggotaan di lingkungan HMJ Teknik
+                  Informatika.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-out-left"
+              class="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-12"
+            >
+              <img
+                width="1480px"
+                height="2033px"
+                class="img-fluid"
+                src="assets/images/ti-bot/rev1.png"
+                alt="ti bot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tujuan E-ORS -->
+      <section id="tujuan-eors" class="py-6 bg-white">
+        <div class="container mt-6">
+          <div class="row">
+            <div class="offset-xl-2 col-xl-8 col-12">
+              <div data-aos="fade-up" class="mb-8">
+                <h2 class="mb-3 display-4 fw-bold">
+                  Tujuan
+                  <u class="text-warning"
+                    ><span class="text-primary">E-ORS</span></u
+                  >
+                </h2>
+                <p class="lead text-muted">
+                  Ada beberapa tujuan pembuatan Electronic Open Recruitment
+                  System HMJ TI, diantaranya
+                </p>
+              </div>
+              <div>
+                <div class="row">
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-clock-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Mudah Digunakan</h2>
+                    <p class="fs-5">
+                      Mempermudah dalam melakukan kegiatan Open Recruitment
+                      kepanitiaan atapun keanggotaan HMJ TI Undiksha
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-book-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Ramah Kertas</h2>
+                    <p class="fs-5">
+                      Mengurangi penggunaan kertas sekali pakai yang biasanya
+                      digunakan dalam setiap berkas yang dikumpul pada kegiatan
+                      Open Recruitment secara konvensional
+                    </p>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    class="col-md-6 col-12 pe-lg-6 mb-lg-6 mb-4"
+                  >
+                    <div
+                      class="icon-shape icon-lg bg-primary h3 text-white rounded-3 mb-4"
+                    >
+                      <i class="bi bi-calendar2-check-fill"></i>
+                    </div>
+                    <h2 class="fw-bold">Proses Mudah</h2>
+                    <p class="fs-5">
+                      Mempermudah dalam melakukan pendataan, melakukan
+                      wawancara, penilaian wawancara, hingga memberikan
+                      keputusan akhir penerimaan peserta
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Kepanitiaan -->
+      <section id="open-recruitment" class="py-6">
+        <div class="py-8 container">
+          <div class="offset-xl-2 col-xl-8 col-12">
+            <div data-aos="fade-up" class="mb-8">
+              <h2 class="mb-3 display-4 fw-bold">
+                <u class="text-warning"
+                  ><span class="text-primary">Open Recruitment</span></u
+                >
+                yang Bisa Diikuti
+              </h2>
+              <p class="lead text-muted">
+                Berikut beberapa Open Recruitement yang tersedia
+              </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              <div data-aos="fade-up" class="col">
+                <div class="card card-hover">
+                  <a href="#" class="card-img-top"
+                    ><img
+                      src="data:image/jpeg;base64,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"
+                      alt=""
+                      class="rounded-top-md card-img-top"
+                  /></a>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <span class="badge bg-info-soft text-wrap text-start"
+                        >Berakhir dalam 5 hari 3 jam 53 menit</span
+                      >
+                    </div>
+                    <h4 class="mb-2 text-truncate-line-2">
+                      <a href="#" class="text-inherit">Panitia INTEGER #5 </a>
+                    </h4>
+                    <small
+                      >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptates odio, a molestiae eveniet beatae quidem hic
+                      facilis. Dicta, ratione enim.</small
+                    >
+                  </div>
+                  <!-- Card Footer -->
+                  <div class="card-footer">
+                    <div class="col-auto">
+                      <a href="#" class="btn btn-primary">
+                        <i
+                          class="bi bi-check-circle text-white align-middle me-2"
+                        ></i
+                        >Daftar Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pertanyaan Umum Seputar EORS -->
+      <section id="#pertanyaan-umum" class="py-6 bg-white">
+        <div class="py-8 container">
+          <div class="offset-xl-2 col-xl-8 col-12">
+            <div data-aos="fade-up" class="mb-7">
+              <h2 class="mb-3 display-4 fw-bold">
+                <u class="text-warning"
+                  ><span class="text-primary">Pertanyaan Umum</span></u
+                >
+                Seputar E-ORS
+              </h2>
+              <p class="lead text-muted">
+                Berikut beberapa pertanyaan yang sering diajukan
+              </p>
+            </div>
+          </div>
+          <div class="offset-xl-2 col-xl-8 col-12">
+            <!-- Pertanyaan 1 -->
+            <div data-aos="fade-up" class="border-bottom py-3" id="headingOne">
+              <h3 class="mb-0 fw-bold">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-inherit text-decoration-none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <span class="me-auto">
+                    Bagaimana cara mendaftar dalam kegiatan?
+                  </span>
+                  <span class="collapse-toggle ms-4">
+                    <i class="bi bi-chevron-down text-primary"></i>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="py-3 fs-4">
+                Silahkan perhatikan pada bagian Kepanitiaan Yang Bisa Diikuti
+                untuk mengetahui informasi terkait waktu pendaftaran dan lain
+                lain.
+              </div>
+            </div>
+            <!-- Pertanyaan 2 -->
+            <div data-aos="fade-up" class="border-bottom py-3" id="headingTwo">
+              <h3 class="mb-0 fw-bold">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-inherit text-decoration-none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <span class="me-auto">
+                    Terdapat informasi bahwa nim sudah digunakan, apa yang harus
+                    saya lakukan?
+                  </span>
+                  <span class="collapse-toggle ms-4">
+                    <i class="bi bi-chevron-down text-primary"></i>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="py-3 fs-4">
+                Jika anda memang tidak merasa pernah mendaftar pada suatu
+                kegiatan, silahkan hubungi administrator untuk men set ulang nim
+                anda.
+              </div>
+            </div>
+            <!-- Pertanyaan 3 -->
+            <div
+              data-aos="fade-up"
+              class="border-bottom py-3"
+              id="headingThree"
+            >
+              <h3 class="mb-0 fw-bold">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-inherit text-decoration-none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <span class="me-auto">
+                    Kuota pendaftaran telah terpenuhi, apa yang harus saya
+                    lakukan?
+                  </span>
+                  <span class="collapse-toggle ms-4">
+                    <i class="bi bi-chevron-down text-primary"></i>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="py-3 fs-4">
+                Kuota pendaftaran yang telah terpenuhi menandakan bahwa
+                kapasitas kepanitiaan yang diterima pada suatu kegiatan sudah
+                penuh, jumlah kuota yang diterima tidak menandakan bahwa
+                semuanya akan diterima. Anda dapat menghubungi administrator
+                untuk men set kuota pendaftaran selama waktu open recruitment
+                masih berlangsung
+              </div>
+            </div>
+            <!-- Pertanyaan 4 -->
+            <div data-aos="fade-up" class="border-bottom py-3" id="headingFour">
+              <h3 class="mb-0 fw-bold">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-inherit text-decoration-none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <span class="me-auto">
+                    Saya bingung terkait dengan peletakan dokumen yang diminta
+                  </span>
+                  <span class="collapse-toggle ms-4">
+                    <i class="bi bi-chevron-down text-primary"></i>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="py-3 fs-4">
+                Untuk dokumen persyaratan, jika diminta harap menggunakan format
+                *.pdf dan berisi semua file dokumen persyaratan yang diminta
+                kecuali foto pendaftar. Contoh, file yang diminta adalah KRS dan
+                KHS, silahkan kedua file tersebut dijadikan 1 file berformat
+                *.pdf. Sehingga yang dikumpul nantinya hanya 1 file saja..
+              </div>
+            </div>
+            <!-- Pertanyaan 5 -->
+            <div data-aos="fade-up" class="border-bottom py-3" id="headingFive">
+              <h3 class="mb-0 fw-bold">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-inherit text-decoration-none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <span class="me-auto">
+                    Saya menemukan masalah lain terkait website, kemana saya
+                    harus melapor?
+                  </span>
+                  <span class="collapse-toggle ms-4">
+                    <i class="bi bi-chevron-down text-primary"></i>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="py-3 fs-4">
+                Jika anda menemukan masalah pada pendaftaran kegiatan, pada
+                masing-masing kegiatan sudah diberikan kontak yang dapat
+                dihubungi, atau jika anda masih bingung, anda dapat menghubungi
+                akun Instagram
+                <a href="https://instagram.com/hmj_ti.undiksha"
+                  >@hmj_ti.undiksha</a
+                >
+                untuk informasi lebih lengkap
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-lg-10 pt-5 footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="mb-4 mt-4 row">
+              <div class="col-12 col-sm-7 col-lg-3">
+                <div>
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="assets/images/logo/logo-undiksha.svg"
+                      alt="Logo Undiksha"
+                      style="height: 4.5rem"
+                    />
+                    <img
+                      src="assets/images/logo/logo-hmj.svg"
+                      alt="Logo HMJ TI"
+                      style="height: 4.8rem"
+                    />
+                  </div>
+                  <!-- social media -->
+                  <div class="fs-4 mt-4">
+                    <div class="d-flex gap-5 justify-content-center">
+                      <a
+                        href="https://web.facebook.com/hmj.ti.undiksha/?_rdc=1&_rdr"
+                        class="mdi mdi-facebook text-muted"
+                      ></a>
+
+                      <a
+                        href="https://www.instagram.com/hmj_ti.undiksha/"
+                        class="mdi mdi-instagram text-muted"
+                      ></a>
+
+                      <a
+                        href="https://www.youtube.com/channel/UCjvKksTEifUWNU_rfCHubDg?app=desktop"
+                        class="mdi mdi-youtube text-muted"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+            <div class="mb-4">
+              <h3 class="fw-bold mb-3">Akses Cepat</h3>
+              <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                <li>
+                  <a href="https://hmjti.undiksha.ac.id" class="nav-link"
+                    >Web HMJ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://integer.hmjti.undiksha.ac.id"
+                    class="nav-link"
+                    >Web Integer</a
+                  >
+                </li>
+                <li>
+                  <a href="https://eors.hmjti.undiksha.ac.id" class="nav-link"
+                    >EORS</a
+                  >
+                </li>
+                <li>
+                  <a href="https://etika.hmjti.undiksha.ac.id" class="nav-link"
+                    >ETIKA</a
+                  >
+                </li>
+                <li>
+                  <a href="https://iuran.hmjti.undiksha.ac.id" class="nav-link"
+                    >Iuran HMJ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://inventaris.hmjti.undiksha.ac.id"
+                    class="nav-link"
+                    >Inventaris</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="mb-4">
+              <h3 class="fw-bold mb-3">Konten</h3>
+              <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                <li><a href="#tujuan-eors" class="nav-link">Tujuan EORS</a></li>
+                <li>
+                  <a href="#open-recruitment" class="nav-link"
+                    >Open Recruitment</a
+                  >
+                </li>
+                <li>
+                  <a href="#pertanyaan-umum" class="nav-link"
+                    >Pertanyaan Umum</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="mb-4">
+              <h3 class="fw-bold mb-3">Layanan</h3>
+              <p>
+                Jl. Udayana No.11, Banjar Tegal, Singaraja, Kabupaten Buleleng,
+                Bali
+              </p>
+              <p class="mb-1">
+                Email:
+                <a href="mailto://hmjtiundiksha@gmail.com"
+                  >hmjtiundiksha@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center g-0 border-top py-2 mt-6">
+          <!-- Desc -->
+          <div class="col">
+            <div class="d-lg-flex align-items-center">
+              <div class="me-4">
+                <span>
+                  © Copyright
+                  <span id="copyright">
+                    <script>
+                      document
+                        .getElementById("copyright")
+                        .appendChild(
+                          document.createTextNode(new Date().getFullYear())
+                        );
+                    </script>
+                  </span>
+                  HMJ TI Undiksha
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Links -->
+          <div class="col text-end">
+            Made with <i class="mdi mdi-heart text-danger"></i> by Web Dev HMJ
+            TI
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
