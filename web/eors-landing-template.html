@@ -28,6 +28,9 @@
       href="assets/libs/@mdi/font/css/materialdesignicons.min.css"
     />
 
+    <!-- Fonts -->
+    <link href="assets/fonts/feather/feather.css" rel="stylesheet" />
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/theme.min.css" />
 
@@ -53,22 +56,71 @@
               height="50"
               alt="logo hmj ti"
           /></a>
-          <div class="d-flex align-items-center">
-            <div>
-              <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar-default3"
-                aria-controls="navbar-default3"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="icon-bar top-bar mt-0"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-              </button>
-            </div>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-default"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar mt-0"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-default">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Layanan
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a
+                    class="dropdown-item"
+                    href="https://eors.hmjti.undiksha.ac.id"
+                    >EORS</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="https://etika.hmjti.undiksha.ac.id"
+                    >ETIKA</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="https://inventaris.hmjti.undiksha.ac.id"
+                    >Inventaris</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="https://iuran.hmjti.undiksha.ac.id"
+                    >Iuran HMJ</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="https://sso.hmjti.undiksha.ac.id"
+                    >Single Sign On (SSO)</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Website HMJ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://integer.undiksha.ac.id"
+                  >Integer</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -598,6 +650,7 @@
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
